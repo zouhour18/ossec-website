@@ -23,7 +23,9 @@ if ($result == false) {
 }
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 if($row) {
-	die('Logged In');
+    header('Location: focus-premium-fixed/focus-premium/themes/index1.html');
+    exit;
+
 }
 else {
 	die('Wrong username and password');
